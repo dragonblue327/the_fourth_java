@@ -1,0 +1,11 @@
+TestTGon.class
+TestNGon.class
+TestPoint3D.class
+TestCircle.class
+TestQGon.class
+TestSegment.class
+TestPolyline.class
+TestPoint.class
+TestPoint2D.class
+TestTrapeze.class
+TestRectangle.class

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FindIntersection">
+   <children>
+      <ComboBox fx:id="cbTypesFigures" layoutX="109.0" layoutY="56.0" onAction="#changeTypeFigure" prefWidth="150.0" />
+      <Button layoutX="366.0" layoutY="56.0" mnemonicParsing="false" onAction="#confirm" text="Найти пересечение" />
+      <Button fx:id="bCancel" layoutX="506.0" layoutY="56.0" mnemonicParsing="false" onAction="#cancel" text="Отмена" />
+      <ComboBox fx:id="cbFiguresLeft" layoutX="14.0" layoutY="100.0" onAction="#changeLeft" prefWidth="150.0" />
+      <ComboBox fx:id="cbFiguresRight" layoutX="201.0" layoutY="100.0" onAction="#changeRight" prefWidth="150.0" />
+   </children>
+</Pane>

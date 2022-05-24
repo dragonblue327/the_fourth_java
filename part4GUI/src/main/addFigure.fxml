@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddFigure">
+   <children>
+      <Label fx:id="labFigureName" layoutX="39.0" layoutY="59.0" prefHeight="25.0" prefWidth="128.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="225.0" layoutY="34.0" mnemonicParsing="false" onAction="#confirm" text="Добавить" />
+      <Button fx:id="bCancel" layoutX="326.0" layoutY="34.0" mnemonicParsing="false" onAction="#cancel" text="Отмена" />
+      <SplitMenuButton layoutX="39.0" layoutY="34.0" mnemonicParsing="false" text="Выбрать фигуру">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#caseSegment" text="Отрезок" />
+          <MenuItem mnemonicParsing="false" onAction="#caseCircle" text="Круг" />
+            <MenuItem mnemonicParsing="false" onAction="#casePolyline" text="Ломоная" />
+            <MenuItem mnemonicParsing="false" onAction="#caseNGon" text="Многоугольник" />
+            <MenuItem mnemonicParsing="false" onAction="#caseTGon" text="Треугольник" />
+            <MenuItem mnemonicParsing="false" onAction="#caseQGon" text="Четырехугольник" />
+            <MenuItem mnemonicParsing="false" onAction="#caseRectangle" text="Прямоугольник" />
+            <MenuItem mnemonicParsing="false" onAction="#caseTrapeze" text="Трапеция" />
+        </items>
+      </SplitMenuButton>
+      <ScrollPane layoutX="55.0" layoutY="100.0" prefHeight="200.0" prefWidth="300.0">
+         <content>
+            <GridPane fx:id="coordinatesPane" prefHeight="328.0" prefWidth="200.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Spinner fx:id="pointNumSpinner" disable="true" layoutX="417.0" layoutY="34.0" />
+   </children>
+</Pane>

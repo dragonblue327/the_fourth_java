@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CController">
+   <children>
+      <Canvas fx:id="canvas" height="400.0" layoutX="14.0" layoutY="19.0" width="400.0" />
+      <Button fx:id="bAddFig" layoutX="481.0" layoutY="27.0" mnemonicParsing="false" onAction="#addFigure" text="Добавить фигуру" />
+      <Button layoutX="461.0" layoutY="58.0" mnemonicParsing="false" onAction="#moveFigure" text="Переместить фигуру" />
+      <Button layoutX="485.0" layoutY="92.0" mnemonicParsing="false" onAction="#removeFigure" text="Удалить фигуру" />
+      <Button layoutX="479.0" layoutY="125.0" mnemonicParsing="false" onAction="#saveToFile" text="Сохранить в файл" />
+      <Button layoutX="479.0" layoutY="158.0" mnemonicParsing="false" onAction="#loadFromFile" prefHeight="25.0" prefWidth="149.0" text="Загрузить из файла" />
+      <Button layoutX="460.0" layoutY="194.0" mnemonicParsing="false" onAction="#saveImage" text="Сохранить изображение" />
+      <Button layoutX="500.0" layoutY="227.0" mnemonicParsing="false" onAction="#clearCanvas" text="Очистить" />
+      <Button layoutX="477.0" layoutY="262.0" mnemonicParsing="false" onAction="#findLength" text="Вычислить длину" />
+      <Button layoutX="472.0" layoutY="294.0" mnemonicParsing="false" onAction="#findSquare" text="Вычислить площадь" />
+      <Label fx:id="lbTextProp1" layoutX="471.0" layoutY="368.0" />
+      <Label fx:id="lbNumProp1" layoutX="469.0" layoutY="385.0" />
+      <Button layoutX="471.0" layoutY="327.0" mnemonicParsing="false" onAction="#findIntersection" text="Найти пересечение" />
+      <Button layoutX="471.0" layoutY="360.0" mnemonicParsing="false" onAction="#saveToDB" text="Сохранить в БД" />
+      <Button layoutX="471.0" layoutY="415.0" mnemonicParsing="false" onAction="#loadFromDB" text="Взять из БД" />
+      <Label fx:id="lbTextProp2" layoutX="481.0" layoutY="385.0" />
+   </children>
+</Pane>

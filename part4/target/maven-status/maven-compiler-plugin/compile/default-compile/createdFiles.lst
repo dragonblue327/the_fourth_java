@@ -1,0 +1,15 @@
+Geometry\Polyline.class
+Geometry\IPolyPoint.class
+Geometry\OpenFigure.class
+Geometry\Point2D.class
+Geometry\Point3D.class
+Geometry\Segment.class
+Geometry\TGon.class
+Geometry\Rectangle.class
+Geometry\Circle.class
+Geometry\QCon.class
+Geometry\Point.class
+Geometry\Trapeze.class
+Geometry\IShape.class
+Geometry\IMoveable.class
+Geometry\NGon.class
